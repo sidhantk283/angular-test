@@ -1,0 +1,12 @@
+<div>
+  {{ todoList }}
+  <form #todoForm>
+    <input #value (keydown)="getValue(value.value)" value= />
+    <button (click)="addTodo()">Add</button>
+  </form>
+</div>
+<div>
+  <ul *ngFor="let list of todoList">
+    <li>{{ list }}</li>
+  </ul>
+</div>
